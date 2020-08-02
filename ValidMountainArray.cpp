@@ -6,9 +6,6 @@ public:
         }
         bool status = true;
         for(int i = 1; i < A.size(); i++){
-            if(A[i-1] == A[i]){
-                return false;
-            }
             if(status){
                 if(A[i-1] > A[i]){
                     if(i == 1){
@@ -17,7 +14,7 @@ public:
                     status = !status;
                 }
             } else{
-                if(A[i-1] < A[i]){
+                if(A[i-1] <= A[i]){
                     return false;
                 }
             }
