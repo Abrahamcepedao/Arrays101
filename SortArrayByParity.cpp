@@ -6,9 +6,6 @@ public:
         int count = 0;
         int number = A[0];
         int current = 0;
-        if(A.size() < 2){
-            return A;
-        }
         while(count < A.size()){
             if(number % 2 == 0){
                 A[even++] = number;
